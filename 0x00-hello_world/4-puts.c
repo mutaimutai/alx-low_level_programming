@@ -1,6 +1,8 @@
 #include <stdio.h>
-/*
- * Main - entry point
+/**
+ * main - entry point
+ *
+ * Return:return 0
  */
 
 int main(void)
