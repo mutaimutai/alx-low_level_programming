@@ -1,13 +1,12 @@
+#include <stdio.h>
 #include <unistd.h>
 /**
- * main - entry point
- * Return:returns 1
+ * main-entry point
+ *
+ * Return:Always 1
  */
-int main() {
-    const char* message = "Hello, world!\n";
-    const int messageLength = 14;  // Length of the message
-
-    write(1, message, messageLength);  // Write to standard output
-
-    return 0;
+int main(void)
+{
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
