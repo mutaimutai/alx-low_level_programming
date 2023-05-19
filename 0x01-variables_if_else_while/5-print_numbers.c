@@ -9,7 +9,7 @@ int main(void)
 
 	for (; n <= 9; n++)
 	{
-		putchar('n');
+		printf("%d", n);
 	}
 putchar('\n');
 return (0);
