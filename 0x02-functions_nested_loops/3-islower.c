@@ -4,7 +4,7 @@
  * Return:0 if successfull 1 if not
  */
 
-int _islower(int c);
+int _islower(int c)
 {
 
 	if (c >= 'a' && c <= 'z')
