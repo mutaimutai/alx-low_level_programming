@@ -11,12 +11,9 @@ void times_table(void)
 
 	for (; i <= 9; i++)
 	{
-		for (; (j = j + i); j++)
+		for (; (j = j * i); j++)
 		{
-			_putchar(i + '0');
-			_putchar(j + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, %d",i, j);
 		}
 	}
 }
