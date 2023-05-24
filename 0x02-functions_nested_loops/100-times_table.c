@@ -18,7 +18,7 @@ void print_times_table(int n)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			if (j == 15)
+			if (j == n)
 			{
 				printf("%2d\n", i * j);
 			}
