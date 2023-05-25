@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isupper-checks for uppercase character
- * @n:is the argument passed into the function
+ * @c:is the argument passed into the function
  * Return:1 for true and 0 for false
  */
 int _isupper(int c)
