@@ -3,7 +3,7 @@
  * print_line-prints a line to the terminal
  *@n:the argument input
  */
- void print_line(int n)
+void print_line(int n)
 {
 	int i;
 
