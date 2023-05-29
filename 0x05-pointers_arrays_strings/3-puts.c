@@ -1,8 +1,11 @@
 #include"main.h"
+#include <stdio.h>
+
 /**
  * _puts-function that prints out a string
- * str:argumen to be passed
+ * str:argument passed in
  */
+
 void _puts(char *str)
 {
 	int i;
