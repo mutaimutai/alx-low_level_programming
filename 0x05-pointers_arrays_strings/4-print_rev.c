@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * print_rev-prints a sring in reverse
+ * @s:string to be passed as argument
+ */
 void print_rev(char *s)
 {
 	int count = 0;
@@ -8,7 +12,7 @@ void print_rev(char *s)
 	{
 	}
 
-	for (; j == count - 1; j--)
+	for (j = count - 1; j >= 0; j--)
 	{
 		putchar(s[j]);
 	}
