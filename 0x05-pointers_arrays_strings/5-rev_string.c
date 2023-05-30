@@ -1,19 +1,30 @@
 #include "main.h"
-#include <string.h>
-#include <stdio.h>
+#include "2-strlen.c"
+
 /**
- * rev_string-reverses a string
- * @s:string to be reversed
+ * rev_string - function declaration
+ * @s: string pointer
+ * Return: void
  */
+
+void rev_string(char *s);
+
+/**
+ * rev_string - function definition
+ * Description: reverses a string
+ * @s: the string pointer
+ * Return: void
+ */
+
 void rev_string(char *s)
 {
-	int i, j = 0;
+	int index;
+	char temporary;
 
-	i = strlen(s);
-	putchar(*s);
-	for (j = length - 1; j >= 0; j--)
+	for (index = 0; index < _strlen(s) / 2; index++)
 	{
-		putchar(s[j]);
+		temporary = s[index];
+		s[index] = s[_strlen(s) - (index + 1)];
+		s[_strlen(s) - (index + 1)] = temporary;
 	}
-	putchar('\n');
 }
