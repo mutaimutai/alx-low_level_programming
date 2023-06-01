@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  *_strncat-concatenates two strings
- *@des:to string to be concatenated
+ *@dest:to string to be concatenated
  *@src:the string to be concatenated
  *@n:the size of src
  *Return:returns res after being concatenated with src
