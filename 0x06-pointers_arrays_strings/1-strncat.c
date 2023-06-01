@@ -8,7 +8,7 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	des_len = strlen(des);
+	int des_len = strlen(des);
 	int i;
 
 	for (i = 0;i < n && src[i] != '\0'; i++)
@@ -16,5 +16,5 @@ char *_strncat(char *dest, char *src, int n)
 		des[des_len + i] = src[i];
 		des[des_len + i] = '\0';
 	}
-	return (res);
+	return (des);
 }
