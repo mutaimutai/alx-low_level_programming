@@ -3,7 +3,7 @@
  * _memset-is a function that fills memory with a constant byte
  * @s:characetr pointer
  * @b:the constant byte
- * n:number of bytes in s to occupy
+ * @n:number of bytes in s to occupy
  * Return:the pointer to the memory area s
  */
 
