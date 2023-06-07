@@ -1,22 +1,35 @@
 #include "main.h"
-#include <string.h>
+
 /**
- * _strchr-finds for a character in a string
- * @s:the string to be checked
- * @c:the character
- * Return:returns the resultant string s
+ * *_strchr - function declaration
+ * @s: the string
+ * @c: the character
+ * Return: a character
  */
+char *_strchr(char *s, char c);
+
+/**
+ * *_strchr - function definition
+ * @s: the string to be searched
+ * @c: the character to find
+ * Description: finds a character in a string
+ * Return: a character value
+ */
+
 char *_strchr(char *s, char c)
 {
-	int s_length = strlen(s);
-	int i;
+	int index;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (index = 0; s[index] != '\0'; index++)
 	{
-		if (s[i] == c)
+		if (s[index] == c)
 		{
-			return (s);
+			return (s + index);
 		}
 	}
-	return (NULL);
+	if (s[index] == c)
+	{
+		return (s + index);
+	}
+	return (0);
 }
