@@ -1,4 +1,4 @@
-#includde "main.h"
+#include "main.h"
 /**
  * _pow_recursion-is a function that returns power of a number
  * @x:1st argument
