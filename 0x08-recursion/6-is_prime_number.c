@@ -2,6 +2,8 @@
 /**
 * is_prime_number - returns a prime number
 * @n: takes in an integer
+* @x: integer
+* @n: integer
 * Return: 1 if n a prime number or 0 if not prime
 **/
 int pnumber(int x, int n);
