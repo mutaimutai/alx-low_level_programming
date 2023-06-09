@@ -4,6 +4,7 @@
 * _sqrt_recursion - returns natural square root of a number
 * @n: integer
 * @x: integer
+* @y: integer
 * Return: natural square root or -1 if no square root for n
 **/
 int natural_square(int x, int y);
