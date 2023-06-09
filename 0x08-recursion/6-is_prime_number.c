@@ -4,6 +4,8 @@
 * @n: takes in an integer
 * Return: 1 if n a prime number or 0 if not prime
 **/
+int pnumber(int x, int n)
+
 int is_prime_number(int n)
 {
 if (n == 1 || n < 0)
