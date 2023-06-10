@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main- entry point of the program
  * @argc:argument counter
@@ -8,9 +9,11 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc > 1)
+	int i;
+
+	for (i = 0; i < argc; i++)
 	{
-		printf("%d\n", argc - 1);
+		printf("%d\n", atoi(argv[i]));
 	}
 	return (0);
 }
