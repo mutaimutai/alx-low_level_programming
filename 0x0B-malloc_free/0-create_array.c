@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * cretae_array-function creates memory dynamically
  * @size:size of array
