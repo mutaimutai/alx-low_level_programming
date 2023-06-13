@@ -9,6 +9,14 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	if (s1 == NULL)
+	{
+		return ("");
+	}
+	if (s2 == NULL)
+	{
+		return ("");
+	}
 	int s1_length;
 	int s2_length;
 	int total;
