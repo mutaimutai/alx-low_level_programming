@@ -17,6 +17,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+
 	int s1_length;
 	int s2_length;
 	int total;
