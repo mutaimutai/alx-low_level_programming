@@ -3,7 +3,7 @@
 /**
  * malloc_checked-allocates memory using malloc
  * @b:argument to be input
- * return:the allocated memory
+ * Return:the allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
@@ -12,7 +12,7 @@ void *malloc_checked(unsigned int b)
 	res = malloc(sizeof(int) * b);
 	if (res == NULL)
 	{
-		exit (98);
+		exit(98);
 	}
 	return (res);
 }
