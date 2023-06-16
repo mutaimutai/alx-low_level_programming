@@ -1,32 +1,43 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * array_range-print a range of intergers from min to max
- * @min:where to start
- * @max:where to stop
- * Return:apointer to the newly created array
+ * array_range - function declaration
+ * @min: min of array range
+ * @max: max of array range
+ * Return: pointer or null
  */
 
 int *array_range(int min, int max)
 {
-	int *ptr;
-	int total;
-	int i;
+	int index;
+	int *pointer;
+	int len;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
-	total = max - min + 1;
-	ptr = malloc(total *  sizeof(int));
-	if (ptr == NULL)
+
+	len = 0;
+	for (index = min; index <= max; index++)
+	{
+		len++;
+	}
+
+	pointer = malloc(sizeof(int) * len);
+	if (pointer == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= total; i++)
+
+	index = 0;
+	while (min <= max)
 	{
-		ptr[i] = min + i;
+		pointer[index] = min;
+		index++;
+		min++;
 	}
-	return (ptr);
+	return (pointer);
 }
