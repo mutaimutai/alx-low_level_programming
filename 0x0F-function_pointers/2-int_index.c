@@ -1,24 +1,23 @@
-#include "function_pointers.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include "function_pointers.h"
 /**
- * int_index-takes function pointer as an argument
- * @array:array to be passed
- * @size:size of array
- * @cmp:the function pointer
- * Return:first index of the array
+ * int_index - indexes array
+ * @array: array to go through
+ * @size: size of array
+ * @cmp: function to do something with size
+ * Return: int value
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int i;
+	int index;
 
-	if (array == NULL || size <= 0 || cmp == NUUL)
-	{
+	if (size <= 0 || array == NULL || cmp == NULL)
 		return (-1);
-	}
-	for (i = 0; i < size; i++)
+	for (index = 0; index < size; index++)
 	{
-		cmp(array(i));
-		return (i);
+		if (cmp(array[index]))
+			return (index);
 	}
 	return (-1);
 }
