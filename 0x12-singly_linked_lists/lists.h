@@ -9,6 +9,7 @@ int _putchar(char character);
  * @str: string
  * @len: length of string
  * @next: point next node
+ * Description: singly linked list struct
  */
 
 typedef struct list_s
