@@ -1,12 +1,13 @@
+#include "lists.h"
 size_t print_listint(const listint_t *h)
 {
-  int count;
+  size_t count = 0;
+  const listint_t *ptr = 0;
 
   if (h == NULL)
   {
     printf("list is empty");
   }
-  listint_t *ptr;
   ptr = h;
   while (ptr != NULL)
   {
