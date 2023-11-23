@@ -1,2 +1,4 @@
+# This file automates the compilation of a C program
+
 all: main.c school.c
 	gcc main.c shool.c -o school
