@@ -1,7 +1,10 @@
-all:school
+all:school clean
 
 CC=gcc
 SRC:=$(wildcard *.c)
 
 school:
 	$(CC)  ${SRC} -o $@
+
+clean:
+	@rm school
