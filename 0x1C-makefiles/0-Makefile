@@ -1,0 +1,7 @@
+all: school
+
+school:school.o
+	gcc $< -o $@
+
+school.o: school.c
+	gcc -c $<
