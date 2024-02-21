@@ -3,6 +3,9 @@ SRC = school.c main.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
 
-all:$(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all:$(NAME)
 
+$(NAME):$(OBJ)
+	$(CC) -o $@ $^
+%.o:%.c
+	$(CC) -c -o $@ $< 
