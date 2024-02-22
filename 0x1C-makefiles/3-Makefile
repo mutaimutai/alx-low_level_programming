@@ -11,12 +11,12 @@ $(NAME):$(OBJ)
 %.o:%.c
 	$(CC) -c   $<
 clean:
-	$(RM) $(OBJ)  $(NAME)
+	$(RM)  $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
-fclean:clean oclean
+fclean:oclean clean
 
 re:clean all
 
