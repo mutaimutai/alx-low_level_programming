@@ -8,8 +8,8 @@ all:$(NAME)
 
 $(NAME):$(OBJ)
 	$(CC)  $(OBJ) -o $@
-$(OBJ):$(SRC)
-	$(CC) $(CFLAGS) -c $(SRC)
+%.o:%.c
+	$(CC) $(CFLAGS) -c $<
 clean:
 	$(RM) *~ $(NAME)
 oclean:
